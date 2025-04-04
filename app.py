@@ -44,7 +44,7 @@ def reset():
     ax.plot(T0[:, 0], T0[:, 1], color="black")
 
     # Compute iterations
-    N = 22
+    N = 20
     listT = [T0[0:3]]
     listallT = [T0[0:3]]
     cmap = plt.cm.get_cmap("viridis", N)  # Create a colormap with N discrete colors
