@@ -39,12 +39,12 @@ def reset():
     A, B, C = np.random.rand(2), np.random.rand(2), np.random.rand(2)
     T0 = np.array([A, B, C, A])
     center = (A + B + C) / 3
-    ax.set_xlim(-1.7 + center[0], 1.7 + center[0])
-    ax.set_ylim(-1.7 + center[1], 1.7 + center[1])
+    ax.set_xlim(-1.6 + center[0], 1.6 + center[0])
+    ax.set_ylim(-1.6 + center[1], 1.6 + center[1])
     ax.plot(T0[:, 0], T0[:, 1], color="black")
 
     # Compute iterations
-    N = 20
+    N = 10
     listT = [T0[0:3]]
     listallT = [T0[0:3]]
     cmap = plt.cm.get_cmap("viridis", N)  # Create a colormap with N discrete colors
